@@ -32,6 +32,6 @@ jobs:
         git config --global user.email "tanmay6anand@gmail.com"
         git add "$FILE"
         git commit -m "Hello, my name is Tanmay Anand nice to meet you"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/beesou777/mean-commit.git
+        git push https://x-access-token:${{ secrets.TOKEN }}@github.com/tanmay6anand/DailyCommits.git
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TOKEN: ${{ secrets.TOKEN }}
