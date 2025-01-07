@@ -2,7 +2,8 @@ name: Tanmays's Daily Commit
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
+    - cron: '*/1 * * * *'  # Runs every minute
+    # - cron: '0 0 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
 
 jobs:
   commit:
