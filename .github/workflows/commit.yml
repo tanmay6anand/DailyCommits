@@ -4,7 +4,8 @@ on:
   schedule:
     - cron: '*/1 * * * *'  # Runs every minute
     # - cron: '0 0 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
-
+  workflow_dispatch:
+  
 jobs:
   commit:
     runs-on: ubuntu-latest
@@ -19,7 +20,7 @@ jobs:
       run: |
         FILE="commit_number.md"
         if [ ! -f "$FILE" ]; then
-          echo "Hello, my name is bishwa shah" > "$FILE"
+          echo "Hello, my name is Tanmay anand" > "$FILE"
           echo "commit number: 1" >> "$FILE"
         else
           CURRENT_COUNT=$(grep -oP 'commit number: \K\d+' "$FILE")
