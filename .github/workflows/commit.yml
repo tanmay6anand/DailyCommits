@@ -3,7 +3,7 @@ name: Tanmays's Daily Commit
 on:
   schedule:
     # - cron: '*/1 * * * *'  # Runs every minute
-    - cron: '0 0 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
+    - cron: '00 01,13 * * *'  # Every day at midnight UTC to runs every 7-8 min set cron to '*/1 * * * *'
   workflow_dispatch:
   
 jobs:
